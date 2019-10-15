@@ -4,10 +4,14 @@ prices = {'Apple': 1.99, 'Banana': 0.99,
 print('Unsorted: ', prices)
 print('Sorted by keys alphabetically (default): ', sorted(prices))
 print('Sorted by values lowest => highest (default): ', sorted(prices.values()))
-print('Sorted by values (and return keys): ', sorted(prices, key = prices.__getitem__))
-print('Sort by keys (and return values): ', [value for (key, value) in sorted(prices.items())])
-print('Sort by valies highest => lowest and return everything: ', sorted(prices.items(), key = lambda x: x[1], reverse = True))
-print('Sort by whether or not the value is divisible by 3: ', sorted(prices.items(), key = lambda price: (price[1] * 100) % 3))
+print('Sorted by values (and return keys): ',
+      sorted(prices, key=prices.__getitem__))
+print('Sort by keys (and return values): ', [
+      value for (key, value) in sorted(prices.items())])
+print('Sort by valies highest => lowest and return everything: ',
+      sorted(prices.items(), key=lambda x: x[1], reverse=True))
+print('Sort by whether or not the value is divisible by 3: ',
+      sorted(prices.items(), key=lambda price: (price[1] * 100) % 3))
 
 
 def countFibs(val):

@@ -7,7 +7,7 @@ data = {"First": "John", "Last": "Doe",
 
 keys = list(data.keys())
 # Sort based on logic
-keys.sort(key = sortLogic)
+keys.sort(key=sortLogic)
 
 for key in keys:
     print("%10s:[%-20s]" % (key, data[key]))

@@ -17,8 +17,8 @@
 # x = DataFormatting('c@f.gmail.com', '812-938-8378', 'Smith', 'Joe')
 # print(x.__dict__())
 
-data = {"First": "John", "Last": "Doe", "Phone": "123-456-7800", "Email": "foo@bar.com"}
+data = {"First": "John", "Last": "Doe",
+        "Phone": "123-456-7800", "Email": "foo@bar.com"}
 
 for key in data.keys():
     print("[%10s]:[%-20s]" % (key, data[key]))
-
