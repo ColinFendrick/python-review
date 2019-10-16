@@ -1,7 +1,10 @@
 class MyWhile(object):
-    def __init__(self, age, name):
+    def _update(self, name, age):
         self.name = name
         self.age = age
+
+    def __init__(self, name, age):
+        self._update(name, age)
 
     def InputData(self):
         result = MyWhile('What?', -1)
@@ -21,5 +24,12 @@ class MyWhile(object):
             finally:
                 print('...')
 
+    def update(self, name, age):
+        self._update(name, age)
 
-MyWhile('colin', 29).InputData()
+info = MyWhile('colin', 29)
+print(info.name, info.age)
+info.update('james', 47)
+print(info.name, info.age)
+info._update('ralph', 234)
+print(info.name, info.age)
