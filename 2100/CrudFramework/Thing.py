@@ -1,6 +1,6 @@
 class Thing:
-    def create(self):
-        print('Create')
+    def create(self, val):
+        print(val)
         pass
 
     def read(self):

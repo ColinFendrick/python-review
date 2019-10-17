@@ -1,7 +1,9 @@
 from CrudFramework import Thing
 
+
 class Person(Thing):
     def __init__(self):
-        super().create()
+        super().create('Making a Person out of Thing')
 
-x = Person()
+
+person = Person()
