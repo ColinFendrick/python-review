@@ -1,5 +1,5 @@
 # Basic controller class
-from MyFramework.Person import Person
+from MyFramework import Person
 
 
 class ThingCtrlr01:
