@@ -1,6 +1,10 @@
 # Basic framework concepts ...
 class Thing:
 
+    @classmethod
+    def Create(cls, order=None):
+        return None
+
     def create(self):
         return None
 
